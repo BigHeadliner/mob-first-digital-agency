@@ -3,6 +3,62 @@
   font-weight: 300;
 }
 
+.title {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+}
+
+.call__btn {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Dosis-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Dosis-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Dosis-Light.woff2") format("woff2"), url("../fonts/Dosis-Light.woff") format("woff");
+}
+.call__text {
+  font-family: "Dosis-Light";
+  font-weight: 300;
+}
+
+.title {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+}
+
 .call__btn {
   font-family: "Roboto-Medium";
   font-weight: 500;
@@ -58,7 +114,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
 }
 
@@ -78,6 +135,11 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
@@ -85,6 +147,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  color: #989898;
 }
 
 .container {
@@ -113,6 +176,25 @@ body {
     max-width: 1320px;
   }
 }
+.title {
+  line-height: 28px;
+  font-size: 24px;
+  color: #2B4074;
+  position: relative;
+  padding-bottom: 28px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  background-color: #2B4074;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
 .header {
   background-color: #2B4074;
 }
@@ -398,4 +480,22 @@ body {
   .call__box {
     max-width: 796px;
   }
+}
+.services {
+  padding: 25px 0 40px;
+  text-align: center;
+}
+.services__title {
+  margin-bottom: 47px;
+}
+.services__descr {
+  line-height: 24px;
+  font-style: 20px;
+  color: text-color;
+  margin-bottom: 21px;
+}
+.services__text {
+  color: #797979;
+  font-size: 18px;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */
