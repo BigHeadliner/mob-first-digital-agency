@@ -75,7 +75,11 @@ body {
     }
 }
 
-@media(min-width:1440px) {
+@media(min-width:1440px) { 
+    body{ 
+        overflow-x: hidden;
+    } 
+
     .container {
         max-width: 1320px;
     }
@@ -100,4 +104,10 @@ body {
      left: 0;  
      right: 0;
     }
+} 
+@media(min-width:640px) { 
+  .title{ 
+    font-size: 48px; 
+    line-height: 56px;
+  }
 }
