@@ -52,7 +52,8 @@ body {
 }
 
 .container {
-    padding: 0 20px;
+    padding: 0 20px; 
+    border: 1px solid green;
 }
 
 @media(min-width:640px) {
@@ -81,7 +82,7 @@ body {
     } 
 
     .container {
-        max-width: 1320px;
+        max-width: 1320px; 
     }
 }
 
