@@ -957,7 +957,8 @@ body {
 }
 .news__items {
   border: 1px solid fuchsia;
-  max-width: 900px;
+  max-width: 273px;
+  width: 100%;
   margin: 0 auto;
 }
 .news__item {
@@ -967,6 +968,7 @@ body {
   background-size: cover;
   position: relative;
   cursor: pointer;
+  max-width: 270px;
   border: 1px solid transparent;
   transition: all 0.5s;
   margin-bottom: 63px;
@@ -1064,92 +1066,24 @@ body {
     margin-bottom: 88px;
   }
   .news__items {
-    flex-wrap: nowrap;
+    max-width: 598px;
+    width: 100%;
   }
   .news__item {
-    width: 47%;
-    margin: 30px 15px;
+    margin: 27px 14px;
   }
-  .news__item-wrapper {
-    background-color: rgba(43, 64, 116, 0.3);
-    border: 10px solid #2B4074;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s;
+}
+@media (min-width: 1024px) {
+  .news {
+    padding: 65px 0 80px;
   }
-  .news__item-wrapper:hover {
-    opacity: 1;
+  .news__title {
+    margin-bottom: 115px;
   }
-  .news__item--1 {
-    width: 270px;
-    height: 450px;
+  .news__items {
+    max-width: 875px;
   }
-  .news__item--2 {
-    width: 270px;
-    height: 341px;
-  }
-  .news__item--3 {
-    width: 268px;
-    height: 383px;
-  }
-  .news__item--4 {
-    width: 270px;
-    height: 210px;
-  }
-  .news__item--4:hover .news__link {
-    position: absolute;
-    left: 0;
-    bottom: 15%;
-  }
-  .news__item--5 {
-    width: 270px;
-    height: 197px;
-  }
-  .news__item--5:hover .news__link {
-    position: absolute;
-    left: 0;
-    bottom: 15%;
-  }
-  .news__item--6 {
-    width: 268px;
-    height: 341px;
-  }
-  .news__item--7 {
-    width: 269px;
-    height: 198px;
-  }
-  .news__item--7:hover .news__link {
-    position: absolute;
-    left: 0;
-    bottom: 15%;
-  }
-  .news__item--8 {
-    width: 269px;
-    height: 397px;
-  }
-  .news__img-info {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  .news__link {
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 18px;
-    color: #4A4A4A;
-    background: #FFF;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -38px;
-    transition: all 0.5s;
-  }
-  .news .grid-sizer {
-    width: 33%;
+  .news__item {
+    margin: 27px 10px;
   }
 }/*# sourceMappingURL=style.css.map */
