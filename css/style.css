@@ -13,7 +13,7 @@
   font-weight: 400;
 }
 
-.news__link, .project__item-link, .services__item-link, .services__item-title {
+.project__item-link, .services__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -69,7 +69,7 @@
   font-weight: 400;
 }
 
-.news__link, .project__item-link, .services__item-link, .services__item-title {
+.project__item-link, .services__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -948,19 +948,35 @@ body {
   }
 }
 .news {
+  padding: 40px 0 20px;
   background: #F9F6E5;
-  padding: 40px 0;
 }
 .news__title {
-  text-align: center;
   margin-bottom: 40px;
-  color: #4A4A4A;
+  text-align: center;
+}
+.news__items {
+  border: 1px solid fuchsia;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .news__item {
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  margin-bottom: 63px;
+}
+.news__item:hover .news__link {
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+  background: #2B4074;
+  color: #FFF;
 }
 .news__item-wrapper {
   background-color: rgba(43, 64, 116, 0.3);
@@ -974,16 +990,53 @@ body {
 .news__item-wrapper:hover {
   opacity: 1;
 }
-.news__item-wrapper:hover .news__link {
+.news__item--1 {
+  width: 270px;
+  height: 450px;
+}
+.news__item--2 {
+  width: 268px;
+  width: 270px;
+  height: 341px;
+}
+.news__item--3 {
+  width: 268px;
+  height: 383px;
+}
+.news__item--4 {
+  width: 270px;
+  height: 210px;
+}
+.news__item--4:hover .news__link {
   position: absolute;
   left: 0;
-  bottom: 8%;
-  background: #2B4074;
-  color: #FFF;
+  bottom: 15%;
 }
-.news__item--1 {
-  max-width: 305px;
-  height: 450px;
+.news__item--5 {
+  width: 270px;
+  height: 197px;
+}
+.news__item--5:hover .news__link {
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+}
+.news__item--6 {
+  width: 268px;
+  height: 341px;
+}
+.news__item--7 {
+  width: 269px;
+  height: 198px;
+}
+.news__item--7:hover .news__link {
+  position: absolute;
+  left: 0;
+  bottom: 14%;
+}
+.news__item--8 {
+  width: 269px;
+  height: 397px;
 }
 .news__img-info {
   position: absolute;
@@ -1002,5 +1055,101 @@ body {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -38px;
+  transition: all 0.5s;
+}
+
+@media (min-width: 640px) {
+  .news__title {
+    margin-bottom: 88px;
+  }
+  .news__items {
+    flex-wrap: nowrap;
+  }
+  .news__item {
+    width: 47%;
+    margin: 30px 15px;
+  }
+  .news__item-wrapper {
+    background-color: rgba(43, 64, 116, 0.3);
+    border: 10px solid #2B4074;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .news__item-wrapper:hover {
+    opacity: 1;
+  }
+  .news__item--1 {
+    width: 270px;
+    height: 450px;
+  }
+  .news__item--2 {
+    width: 270px;
+    height: 341px;
+  }
+  .news__item--3 {
+    width: 268px;
+    height: 383px;
+  }
+  .news__item--4 {
+    width: 270px;
+    height: 210px;
+  }
+  .news__item--4:hover .news__link {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+  }
+  .news__item--5 {
+    width: 270px;
+    height: 197px;
+  }
+  .news__item--5:hover .news__link {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+  }
+  .news__item--6 {
+    width: 268px;
+    height: 341px;
+  }
+  .news__item--7 {
+    width: 269px;
+    height: 198px;
+  }
+  .news__item--7:hover .news__link {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+  }
+  .news__item--8 {
+    width: 269px;
+    height: 397px;
+  }
+  .news__img-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .news__link {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    color: #4A4A4A;
+    background: #FFF;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    transition: all 0.5s;
+  }
+  .news .grid-sizer {
+    width: 33%;
+  }
 }/*# sourceMappingURL=style.css.map */

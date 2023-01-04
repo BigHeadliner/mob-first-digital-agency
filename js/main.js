@@ -22,6 +22,15 @@ $(function(){
           }
           
         ]
+      }); 
+       
+      $('.news__items').masonry({
+          itemSelector: '.news__item',   
+          // columnWidth: 200,
+          fitWidth: true,     
+          // percentPosition: true,
+          // olumnWidth: '.grid-sizer',
+      
       });
                         
 
