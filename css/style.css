@@ -892,6 +892,10 @@ body {
   padding: 21px 26px;
   color: #F9F6E5;
   font-weight: 500;
+  display: inline-block;
+}
+.team .fancybox-slide {
+  padding: 10px;
 }
 
 @media (min-width: 640px) {
