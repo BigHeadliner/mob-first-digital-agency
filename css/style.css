@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.footer__contacts-title, .footer__address-title, .footer__faq-title, .footer__menu-title, .bottom-slider__author, .bottom-slider__span, .project__item-link, .services__item-link, .services__item-title {
+.footer__contacts-title, .footer__address-title, .footer__faq-title, .footer__menu-title, .bottom-slider__author, .bottom-slider__span, .project__item-link, .services__item-link, .services__item-title, .menu__link {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -79,7 +79,7 @@
   font-weight: 400;
 }
 
-.footer__contacts-title, .footer__address-title, .footer__faq-title, .footer__menu-title, .bottom-slider__author, .bottom-slider__span, .project__item-link, .services__item-link, .services__item-title {
+.footer__contacts-title, .footer__address-title, .footer__faq-title, .footer__menu-title, .bottom-slider__author, .bottom-slider__span, .project__item-link, .services__item-link, .services__item-title, .menu__link {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -275,6 +275,32 @@ body {
   top: 15px;
   left: 14px;
   box-shadow: 0 4px 0 0 #2B4074, 0 8px 0 0 #2B4074;
+}
+
+.menu__list {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  background-color: #fff;
+  display: block;
+  top: -350px;
+  transition: all 0.5s;
+  z-index: 5;
+}
+
+.menu__link:hover {
+  border: none;
+}
+
+.menu__list.menu__list--active {
+  top: 83px;
+}
+
+.menu__link {
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+  color: #2B4074;
 }
 
 @media (min-width: 1440px) {

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <div class="logo">
@@ -20,7 +20,26 @@
             <img class="logo__link-img" src="images/logo.png" alt="logo">
           </a>
         </div>
-        <nav class="menu">
+        <nav class="menu"> 
+          <ul class="menu__list">  
+
+            <li class="menu__item">
+              <a class="menu__link" href="#services">СЕРВІС</a>
+            </li>  
+            <li class="menu__item">
+              <a class="menu__link" href="#project">ПРОЕКТИ</a>
+            </li>  
+            <li class="menu__item">
+              <a class="menu__link" href="#team">КОМАНДА</a>
+            </li>  
+            <li class="menu__item">
+              <a class="menu__link" href="#news">НОВИНИ</a>
+            </li>  
+            <li class="menu__item">
+              <a class="menu__link" href="#footer">КОНТАКТИ</a>
+            </li> 
+            
+          </ul>
           <button class="menu__btn"></button>
         </nav>
       </div>
@@ -92,7 +111,7 @@
       </div>
     </div>
   </section> 
-  <section class="services"> 
+  <section class="services" id="services"> 
     <div class="container"> 
       <div class="services__inner"> 
         <div class="services__head"> 
@@ -193,7 +212,7 @@
       </div>
     </div>
   </section> 
-  <section class="project"> 
+  <section class="project" id="project"> 
      <div class="container"> 
       <div class="project__title title"> 
              Наші проекти
@@ -274,7 +293,7 @@
      </div>
   </section> 
    
-  <section class="team"> 
+  <section class="team" id="team"> 
     <div class="container">  
        
      
@@ -298,7 +317,7 @@
       </div>
     </div>
   </section> 
-  <section class="news">
+  <section class="news" id="news">
     <div class="container">
       <h4 class="news__title title">Останні новини</h4>
      
@@ -449,7 +468,7 @@
     </div>
   </section>  
 
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__logo">
@@ -544,7 +563,7 @@
   <section class="to-top"> 
      <div class="container"> 
       <div class="to-top__inner">  
-        <a class="to-top__link" href="#"> 
+        <a class="to-top__link" href="#header"> 
           <p class="to-top__text">ВВЕРХ</p> 
           <img class="to-top__img" src="images/footer/to-top.svg" alt="arrow to top" >
         </a>

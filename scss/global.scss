@@ -40,8 +40,8 @@ p {
 a{ 
    text-decoration: none; 
    color:inherit;
-}
-
+} 
+ 
 body {
     min-width: 320px;
     overflow-x: hidden;
@@ -55,7 +55,9 @@ body {
 .container {
     padding: 0 20px; 
     border: 1px solid transparent;
-}
+} 
+ 
+
 
 @media(min-width:640px) {
     .container {

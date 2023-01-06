@@ -1,4 +1,26 @@
-$(function () {
+$(function () { 
+   
+  $('.menu__btn').on('click', function(){  
+    $('.menu__list').toggleClass('menu__list--active')
+   }) 
+    
+   $('.menu__link').on('click', function(){ 
+      $('.menu__list').removeClass('menu__list--active')
+   }) 
+    
+   $(".menu a, .to-top__link").on("click", function (event) {
+    //відміняєм стандартну обробку кліку по ссилці
+  event.preventDefault();
+
+    // забираєм індифікатор блоку з атрибутом href
+  var id  = $(this).attr('href'),
+
+    //дізнаємся висоту від початку сторінки до блоку на який зсилається якір
+    top = $(id).offset().top;
+  
+    //анімуєм перехід на відстань - top за 1500мс
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 
   $('.top-slider').slick({
     dots: true,

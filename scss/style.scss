@@ -60,7 +60,34 @@
          left: 14px;
          box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
      }
- }
+ } 
+  
+ .menu__list {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    background-color: #fff;
+    display: block;
+    top: -350px;
+    transition: all .5s;
+    z-index: 5;
+  }
+
+  .menu__link:hover {
+    border: none;
+  }
+
+  .menu__list.menu__list--active {
+    top: 83px; 
+  } 
+  
+ .menu__link {
+    padding: 20px 0;
+    display: block;
+    text-align: center; 
+    @extend %robotocondensed-700; 
+    color: $accent;
+  }
 
  @media(min-width:1440px) {
      .menu__btn {
