@@ -405,7 +405,8 @@
         .services__item-text,
         .services__item-link{ 
           opacity: 1; 
-          height: 100%;
+        // height: 100%; 
+          width: 100%;
         }  
          
         .services__item-img{ 
@@ -938,7 +939,7 @@
         // display: flex;
         // flex-direction: column;
         // align-items: center; 
-         border: 1px solid fuchsia;  
+         border: 1px solid transparent;  
          max-width: 273px; 
          width: 100%;
          margin: 0 auto;  
@@ -1096,11 +1097,33 @@
     .news{ 
       padding: 65px 0 80px;   
        &__title{  
-        margin-bottom: 115px;  
+        margin-bottom: 89px;  
        }  
          
        &__items{  
         max-width: 875px; 
+        width: 100%;
+      }   
+        
+       &__item{  
+        margin: 27px 10px; 
+      } 
+          
+     }        
+      
+}  
+ 
+@media(min-width: 1440px) { 
+  
+    .news{  
+         
+        &__title{  
+            margin-bottom: 115px;  
+           }  
+    
+       &__items{  
+        max-width: 1165px;
+        width: 100%;
       }   
         
        &__item{  
@@ -1116,7 +1139,7 @@
 
     &__wrapper {
         margin: 0 auto; 
-        border: 1px solid fuchsia;
+        border: 1px solid transparent;
     } 
      
     &__item{ 
@@ -1410,7 +1433,8 @@
         &__social-items{  
            display: flex; 
            border-top: 1px solid #7EBF84; 
-           border-bottom: 1px solid #7EBF84;
+           border-bottom: 1px solid #7EBF84; 
+           margin-bottom: 40px;
         }
         &__social-item{ 
            margin: 0; 
@@ -1430,10 +1454,9 @@
          display: grid; 
          grid-template-columns: repeat(2, 1fr); 
          grid-template-rows: repeat(2, 1fr);   
-         width: 470px; 
+         max-width: 550px; 
          width: 100%;   
          height: 247px; 
-         padding-left: 15px;
        }
          
         &__contacts, 
@@ -1469,7 +1492,160 @@
     }     
 
 }
+  
  
+@media(min-width: 768px){ 
+ 
+    .footer{ 
+       
+        &__inner{  
+            padding: 115px 0 50px; 
+            
+        }  
+         
+        &__title{ 
+            font-size: 36px;
+            line-height: 32px;
+            max-width: 630px;
+        } 
+          
+        &__social-item{ 
+           margin: 0; 
+           width: 175px; 
+           height: 68px; 
+        }   
+      
+       &__contacts-box{ 
+         display: grid; 
+         grid-template-columns: repeat(2, 1fr); 
+         grid-template-rows: repeat(2, 1fr);   
+         max-width: 730px; 
+         width: 100%;   
+         height: 247px; 
+         padding-left: 15px;
+       }
+         
+        &__contacts, 
+        &__address,  
+        &__faq,  
+        &__menu{ 
+            display: flex; 
+            flex-direction: column; 
+            align-items: start;
+            margin-bottom: 40px;
+            text-align: left;
+        }  
+         
+         
+       &__contacts-title, 
+       &__address-title, 
+       &__faq-title, 
+       &__menu-title{ 
+            margin-bottom: 23px; 
+       }  
+        
+       &__faq-title, 
+       &__menu-title{  
+        margin-bottom: 24px;
+       }
+    
+    }     
+
+} 
+ 
+ 
+@media(min-width: 1024px){ 
+ 
+    .footer{ 
+       
+        &__inner{  
+            padding: 158px 0 100px; 
+            
+        }  
+         
+        &__title{ 
+            font-size: 36px; 
+            line-height: 37px;
+            max-width:700px; 
+            margin-bottom: 80px;
+        } 
+           
+       
+        &__social-items{ 
+            margin-bottom: 57px;
+        } 
+
+        &__social-item{ 
+           margin: 0; 
+           width: 236px; 
+           height: 61px; 
+        }   
+      
+       &__contacts-box{ 
+        display: flex; 
+        justify-content: start;   
+        max-width: 953px; 
+        height: 119px;
+        border: 1px solid transparent;
+       }
+         
+        &__contacts, 
+        &__address,  
+        &__faq,  
+        &__menu{ 
+            display: flex; 
+            flex-direction: column; 
+            align-items: start;
+            margin-bottom: 0;
+            text-align: left; 
+            margin-right: 93px;
+        }   
+         
+        &__menu{  
+            margin-right: 0;
+        }
+         
+   
+    }     
+
+} 
+ 
+@media(min-width: 1440px){ 
+ 
+    .footer{ 
+         
+           
+        &__social-items{ 
+            margin-bottom: 80px;
+        } 
+
+        &__social-item{ 
+           margin: 0; 
+           width: 287px; 
+           height: 61px; 
+        }   
+      
+       &__contacts-box{ 
+        display: flex; 
+        justify-content: start;   
+        max-width: 1145px; 
+
+       }
+         
+        &__contacts, 
+        &__address,  
+        &__faq,  
+        &__menu{ 
+            margin-right: 153px;
+        }   
+         
+        &__menu{  
+            margin-right: 0;
+        }
+    
+    }     
+
+}
 
 .to-top {
     background: #F9F6E5;
